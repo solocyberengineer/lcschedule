@@ -1,7 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
+	<head>
+		<link rel='stylesheet' type='text/css' href='./css_files/main.css'>
+		<link rel='stylesheet' type='text/css' href='./css_files/loginpage.css'>
+		<title>Live Schedule</title>
+	</head>
 	<body>
-		<h1>Schedule</h1>
+		<div id='login_container'>
+			<div id='page_title'>
+				<h1>Login Page</h1>
+			</div>
+			<div id="page_form">
+				<form onsubmit='return false'> <!-- add post method -->
+					<input id='username' name='user' type='text' placeholder="username"><br>
+					<input id='password' name='password' type='password' placeholder="password"><br>
+					<button id='confirm' onclick='login()'>Login</button>
+				</form>
+			</div>
+		</div>
+		<script>
+			function login(){
+				var username = document.getElementById('username')
+				var password = document.getElementById('password')
+
+				// logs into account if account is available
+				// else redirects to sign up page
+			}
+		</script>
 	</body>
 </html>
